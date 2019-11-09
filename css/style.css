@@ -1,0 +1,174 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+    body {
+        height: 100vh;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .parallax-wrapper {
+        width: 100vw;
+        height:100vh;
+        box-sizing: border-box;
+        transform-style: preserve-3d;
+        overflow-x: hidden;
+    }
+
+    .parallax-wrapper::before {
+        content:"";
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+        background-image: url("https://lh3.googleusercontent.com/e0DFyxSAmdJQKDTyuclbK6JhUBmda7z94azO5m8pfhJEufMQE2wWkjMJNJX_zgMA_R0CeEvHVrW2DCJyPBamhhqcwH3lY-eCbme77F26XS_4vzoKv0GTEjkp8OpWTZOGTRHj-DBU1MKpTObp_qLXAdjKdT3yqvz3Q2H76IaGYHKggVruU4GKcyNqW5uJOQnUXcfo3vyFHsQhEba29LuZkw46E2PmOyYNhziU0XvQsTuRYoqK4wfc9cMGjv2wpYRHQtLBFpmIcSi9U0aB3qDcfYwpp4Yh0OBsswnG4mtAyKj7OWElgHW9fhrFUgS4Aitht0M8B0A6PAS89lWL-Xf4L-6yhtMs-nUca95n4WQlysvu8hGJ5daqvWaDEO9m3N3EX5nGn5o4uD2d8taYS6iJqW_kxQ5j2AJsgy_EIHSnfiyMkqriFTU4v3QJbSzTXD0vwncnUtm7pIOqI1fS5BlIVfgA8xPphOb5gkOKDgh76kcysELbxOMXLrtEF7IHOYs_xdHSZ5DVzk9uDrpK2Z57_07N65vSmFA-81rghT2T0eZdeTUit1-GdF5p9M5YLkgS974gHxMnuBwAcsnqCPAvROH1IvDGqBIUjOzEV_rHM0GKTm7l1m6Tcroih4hjhK6Qq3m0k989c_4oJEqxJiDvvBHS3xMmm-m6IJUBuN0xT8iXJlqjnTnsonH0GRQMzf3qAc3_UdghhFaMvhVuHh0AmBbJLB7_S038cnJjyMTkSbbgd5Rj=w1467-h978-no");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        transform:translateZ(-1px) scale(2);
+        opacity: 0.8;
+        overflow-x: hidden;
+    }
+
+    .regular-wrapper {
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 20vh;
+        background-color: white;
+        background-size: cover;
+        z-index: 2;
+        position: relative;
+    }
+
+    .content {
+        position: absolute;
+        width: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.titleName {
+    font-size: 30px;
+    color: rgb(0, 46, 107);
+    margin: 0px 0px 10px 10px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+
+}
+    
+.catchText {
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+    color: rgb(0, 38, 87);
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 90vw;
+    height: 90vw;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+    .One {
+        background-image: url('https://lh3.googleusercontent.com/1GriefMpeo3QghnjFVARY7uqaUTAl79OXXMqh_B7diP8XdFbOgsknXb5H5vGgXAX_aJjXzBxq9aAcbAtjrWtINVJpHwlFJ1BDaJRBPWLXPfRTE2VK4E-KWNT_EZfwA1Jtxd_A6BlV_J9831LQ-Rv6M3ry1ci3ZQ4IkjqFjVb1VFP_KeWROF6j8TaXBW0P0D9Hr4jE63dz7HgleLvCbAHuvjau0MuRk9ufWXYn0anj7rJRXEw6L7ihV42LFht_BFlzM6nSi30My1DKrEao4JRzc28FVEU9MML4UFJ8PJIs904VGYhr0ZFtt89fJW-ZsNrfmaE8Gio5gYXE9AqyLil48-ajtEpdObRKS-EPesU4oZCLa2hjAzEM5GSwnMFl-KZh_9Zym6L2wWzcx-H_ayNb15-RLynFdxCsMiyytwepkkgoBMWcOnbnvK4mB1h2pncoh3p8pIag4joa0yV62bmYwpe3F6Ol8zHGL8lk87xsQ5X09TqThKnswS13TRpY3zmvCmKjk7Ae2xHdFRtXIIEzbz3nmBw2WlsP3dSyQskkoI4VvwYfl5otKBR6mYpiDxXdZ9UST00YUya5Wc8noPvCepYlaHwuFQ5uNbl2JOYIjhyG245eU-cjEtvn9PFskif7vHQceAUgBmbJO7nXu4JqnUDwWHETUkgIqu3KKodlfXLjvvAsDCIhUQHvaQeYPOAMH7BlIFpS83gkvKvO6FZV0avpckHSXDUDKa7lv2IdMU80NBY=s292-no');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .Two {
+        background-image: url('https://lh3.googleusercontent.com/5YJucygYrMEm1PzuGA2TsV-fcg1Za0okiv4UfZBmNDGbkGDjjCVtLYpAGB526q7uCrAgaJ4JFVowD1aqhbdQ3CAxJQ1yqezsYZPEWmYK19N2TMTw2xU4nLE1QIHJJO7qQENQHCGmvjbkSOm3040NhmblvCZvz_CJKOxmytRQ138aWVJCDHhjqLdCTS8FOW5Q1HtSN1QJO8feyyYSUbFY4DlYhSJrDSkdbKPxFNDIt6NO0fCQSYiDL442ir8Lj-pEEsQ77C_-ue0Z8p030wqSK1ukUyeWF69GVUyWp8twduEygB-SXEhiPTQaWQ4DJ64WmchQMi8pbfOt_N24NKGktrimmATqAy6fILBfMs7rjyIQ2Z5_1pQOfqT6h7FF-cnfro1DQ9wwwROaGOfxUmgmLjIoYTFTrgKhvoFbV5LNdWEAzIo-0qJIF9MSBtMt9_GiDZEBb0bv473_NrghrqN6AnhoL_QQMEKhAylyGlFyk0ew17NIqVdfU5zpevkVPcF2BTe7012jWjzbqtZ0K6io6NgKfMhAANcGdNeD_8HOO_yGWU68uyx0PB41IcQzoxou0qB6L-vGAa0XH0OksIW-MSceBjaipBA0sOIwk43RCwjLhlb4p-J5LY_7ij5r0pj6AuAoGlN-el6YvS3C-RLBtAw3sEUqFX8HIHX-esBLtgh3YFoRQc4L49ymK7rvSJ18c0d7vCwT_YU_Vr8AP4ku3SmsAuWYQ1UfnLsdV6TthK4obnmd=s700-no');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .Three {
+        background-image: url('https://lh3.googleusercontent.com/IoRIxm15hOuW8bmELPq0Yz3-8BhM_9vEeYiGPL7u3KxO0UxbiWat0UD8-pBR6zv4pSpHL6A_BgKMKySfosvdbdO9y_Zcsdiz2w4Xeypln-F9dCZdSiI4Psx80Jv1YINmRb9Fsx8J_oTJvNXe_qLsBqEOhekZCccjRykKkFzAfFOTMvyyaG_7G6eEoiBM2eRDsJcImplwkdUml9wP5iJ_vsYqGcG5_uGR3Sj-iQX1tDJiY2Hy77yXFnHV7HBstnlA8ZCFkCw2Ao487ghsM18aZOJ-w2XK6NhnohkMVfYrMwIH7FprbZuYWIarD0TT2Id63HYJrfZ6S7hVGFM70ATGdO7T3P7m6He0SU0GLvJnszQmwH1laElsbpMMzXMwPz3qpu1JzXoOyBHfhY_EohqtxZ-pSOLbbCQcNMGqsgdP4ShvqjBnym1QUYuREuUJSSG1LjbnvzZi1FbdAES56hvCWKiDvBMk6v7MF-bODmks7owD1tWFKA7DF3cuUWmCB_4VbEW2zl66L2C_V59r9ZMy_FS0T9OGaF3iNgnM-dJ2wYDjj8L-ge5pCcTw8NmmG08_TRAkoltjSZ-0nn9I2Y4x4btvkop-NdTt7SyN9TwFoWM_uI-htioQGZI7RryFU2JahzBBybaq5umfdbHkb0GdmlMhCs_cLOnp-L-3hyBWKUV8mPqKSJM8Br2astGDIrqbeue4Q02jrJRGBwo1gICXg7waNIhbjnhDQq1owZlz5DpwloqC=w910-h909-no');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 90px;
+    color: rgb(255, 254, 209);
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
