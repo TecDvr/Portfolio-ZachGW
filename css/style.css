@@ -378,6 +378,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .screenAppLinkIcon a:hover {
@@ -409,88 +410,10 @@ footer {
 }
 
 /* tablet */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     .project {
-        width: 29vw;
-        height: 98vh;
-        opacity: 0.8;
-        animation: none;
-    }
-    
-
-    .project:hover {
-        transform: scale(1.02);
-        opacity: 1;
-        border: none;
-        box-shadow: 3px 3px 13px black;
-    }
-
-    .Three {
-        margin-bottom: 80px;
-    }
-
-    footer {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 50px 0px 40px 0px;
-        background-color: rgb(255, 255, 247);
-    }
-
-    .contactButton {
-        font-size: 25px;
-        height: 50px;
-        width: 200px;
-        border: none;
-        background-color: rgb(0, 46, 107);
-        color: rgb(255, 255, 247);
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .contactButton:hover {
-        background-color: rgb(0, 94, 138);
-        transform: scale(1.02);
-    }
-
-    .titleName {
-        font-size: 50px;
-        color: rgb(0, 46, 107);
-        margin: 0px 0px 10px 10px;
-        text-align: center;
-        font-family: 'Permanent Marker', cursive;
-    
-    }
-        
-    .catchText {
-        font-size: 25px;
-        margin: 10px 0px 0px 0px;
-        color: rgb(0, 38, 87);
-        margin: 0px 0px 0px 10px;
-        text-align: center;
-    }
-
-    .navBar {
-        display: none;
-    }
-
-    .navBarFull {
-        font-size: 20px;
-        display: flex;
-        flex-direction: row;
-        color: rgb(0, 38, 87);
-    }
-
-    .navBarLink {
-        display: inline-block;
-        color: rgb(0, 38, 87);
-        text-decoration: none;
-        padding: 10px 10px 10px 10px;
-    }
-
-    .navBarLink:hover {
-        transform: scale(1.1);
+        width: 40vw;
+        height: 50vh;
     }
 }
 
