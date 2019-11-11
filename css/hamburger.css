@@ -3,7 +3,7 @@
     width: 3em;
     position: relative;
     z-index: 2;
-    font-size: 12px;
+    font-size: 10px;
     cursor: pointer;
     -webkit-transition: .2s all;
     -o-transition: .2s all;
@@ -60,7 +60,7 @@
     .burger.burger-rotate.open .burger-lines {
       background-color: transparent; }
     .burger.burger-rotate.open .burger-lines:before, .burger.burger-rotate.open .burger-lines:after {
-      background-color: white;
+      background-color: rgb(250, 249, 221);
       left: 0.5em;
       top: 0px; }
     .burger.burger-rotate.open .burger-lines:before {

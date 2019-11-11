@@ -45,11 +45,12 @@ html {
     .regular-wrapper {
         width: 100vw;
         min-height: 100vh;
-        padding-top: 20vh;
-        background-color: white;
+        padding-top: 20px;
+        background-color: rgb(255, 255, 247);
         background-size: cover;
         z-index: 2;
         position: relative;
+        overflow-x: hidden;
     }
 
     .content {
@@ -77,37 +78,86 @@ html {
     text-align: center;
 }
 
+.downArrow {
+    text-align: center;
+    color: rgb(0, 46, 107);
+    font-size: 25px;
+    margin-top: 86vh;
+    animation:  bounceIn 2s ease-in-out 1s infinite;
+}
+
+@keyframes bounceIn {
+    20% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 .flexContainer {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .project {
     width: 90vw;
-    height: 90vw;
-    margin: 10px 10px 10px 10px;
+    height: 110vh;
+    margin: 0px 10px 20px 10px;
     border-radius: 10px;
+    cursor: pointer;
+    animation:  bounceIn 5s infinite;
 }
 
-    .One {
-        background-image: url('https://lh3.googleusercontent.com/1GriefMpeo3QghnjFVARY7uqaUTAl79OXXMqh_B7diP8XdFbOgsknXb5H5vGgXAX_aJjXzBxq9aAcbAtjrWtINVJpHwlFJ1BDaJRBPWLXPfRTE2VK4E-KWNT_EZfwA1Jtxd_A6BlV_J9831LQ-Rv6M3ry1ci3ZQ4IkjqFjVb1VFP_KeWROF6j8TaXBW0P0D9Hr4jE63dz7HgleLvCbAHuvjau0MuRk9ufWXYn0anj7rJRXEw6L7ihV42LFht_BFlzM6nSi30My1DKrEao4JRzc28FVEU9MML4UFJ8PJIs904VGYhr0ZFtt89fJW-ZsNrfmaE8Gio5gYXE9AqyLil48-ajtEpdObRKS-EPesU4oZCLa2hjAzEM5GSwnMFl-KZh_9Zym6L2wWzcx-H_ayNb15-RLynFdxCsMiyytwepkkgoBMWcOnbnvK4mB1h2pncoh3p8pIag4joa0yV62bmYwpe3F6Ol8zHGL8lk87xsQ5X09TqThKnswS13TRpY3zmvCmKjk7Ae2xHdFRtXIIEzbz3nmBw2WlsP3dSyQskkoI4VvwYfl5otKBR6mYpiDxXdZ9UST00YUya5Wc8noPvCepYlaHwuFQ5uNbl2JOYIjhyG245eU-cjEtvn9PFskif7vHQceAUgBmbJO7nXu4JqnUDwWHETUkgIqu3KKodlfXLjvvAsDCIhUQHvaQeYPOAMH7BlIFpS83gkvKvO6FZV0avpckHSXDUDKa7lv2IdMU80NBY=s292-no');
-        background-size: contain;
-        background-repeat: no-repeat;
+.banished {
+    display: none;
+}
 
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.99);
+    
+    }
+    60% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.99);
+    }
+}
+
+
+
+
+    .One {
+        text-align: center;
+        background-image: url('https://lh3.googleusercontent.com/aEQQA97noYbdJC8SIDynBLzz2Kty9TgWBLdsh--_mi1H87VwUYeIJjR-hhkNt9TqcpCEtkkd2aMj7sXsO2aO7pwzmFl4Y8oBOv_x0uI6Cd1Ns_0-nE-WlgIWvug6ZBVX8HGuA-s4J2psQcWiK0TvCZn2t_cpw8RLuMTTvT9B99VdXZcIWrjSYNtv7GcOFkFgeZ-G2nMrwTTl9hFxL6xfCKmXmySIcfNgigLq6pZa7-PxH81QXXe9aqFY43c2vjq8vVgaqTcw22Ur-lXXhkNIlklLdOaFqaq0YxoaVAmNHgLsOWVus3-9h-RwXaqFCTwq_22qez_-Hjo2RgVLAzOowl4eb4YT7-etKZUvSi-CdZlbKIzTdnGz9n8nja5_PVKzQIQ7ocVKTCa5kkvWbzYnhkCdmfJWZJRjC99HPeGaevnRsfj_D_OzNrpGQNcfzM7Tz86pxMwsIwXVkCcx7SUVR2_490el8NdWs5DPjkKNgm-0IV5g-q0QZGo127sz-QZQo-xf2pCK5A7HOTRev6ZQ1EfX7Mvt7zLW5uU3Rl58Is1mf2sAqDCOORzV8SusOKloPCjKsu-yhm-uM_xBCA2Y7XcwHDItEcSM6pCsgXsaboGEtCOnAq5rWSUiMaiSf5BSCo6_Fns94nTwUAtXmN0rJ_7Ly4dx5ANY1XT-17pXhLqhuTyJA7BeJk2UGzKId9QGLGIFAN-AVD1XAfszGsG7ku5MUwpXP40EXM9_9KAE2tWjoYkJ=w422-h893-no');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .Two {
-        background-image: url('https://lh3.googleusercontent.com/5YJucygYrMEm1PzuGA2TsV-fcg1Za0okiv4UfZBmNDGbkGDjjCVtLYpAGB526q7uCrAgaJ4JFVowD1aqhbdQ3CAxJQ1yqezsYZPEWmYK19N2TMTw2xU4nLE1QIHJJO7qQENQHCGmvjbkSOm3040NhmblvCZvz_CJKOxmytRQ138aWVJCDHhjqLdCTS8FOW5Q1HtSN1QJO8feyyYSUbFY4DlYhSJrDSkdbKPxFNDIt6NO0fCQSYiDL442ir8Lj-pEEsQ77C_-ue0Z8p030wqSK1ukUyeWF69GVUyWp8twduEygB-SXEhiPTQaWQ4DJ64WmchQMi8pbfOt_N24NKGktrimmATqAy6fILBfMs7rjyIQ2Z5_1pQOfqT6h7FF-cnfro1DQ9wwwROaGOfxUmgmLjIoYTFTrgKhvoFbV5LNdWEAzIo-0qJIF9MSBtMt9_GiDZEBb0bv473_NrghrqN6AnhoL_QQMEKhAylyGlFyk0ew17NIqVdfU5zpevkVPcF2BTe7012jWjzbqtZ0K6io6NgKfMhAANcGdNeD_8HOO_yGWU68uyx0PB41IcQzoxou0qB6L-vGAa0XH0OksIW-MSceBjaipBA0sOIwk43RCwjLhlb4p-J5LY_7ij5r0pj6AuAoGlN-el6YvS3C-RLBtAw3sEUqFX8HIHX-esBLtgh3YFoRQc4L49ymK7rvSJ18c0d7vCwT_YU_Vr8AP4ku3SmsAuWYQ1UfnLsdV6TthK4obnmd=s700-no');
-        background-size: contain;
+        text-align: center;
+        background-image: url('https://lh3.googleusercontent.com/voqEZnBu_EJ_0RGAGu_HbEShhn2FSpCEVaFU4m51vnN9gnIlA5MRsvYBNp6Az7UzY61nWphaqMkmG8GhwRKGgKWjI11BSy8s3KzysVjlg3GKUOo5L3AuBNV28khbPPlwr3JJpSpQh4dDbmVArjTXrvWXHKJPrS3Qllvi-DIV3uuw624vocOxWYyjYp_J_rdhxdfiYQKQ6oXV8kbgcY_GNEEHMZgyAaWSYTk1Mr4voHOQfITWYxKjNkvr-o_guEEkwZBuOuAOxnbU1AxC5MwwDu2FlDNtzfoh6SM_EmrMvoJ1Ctv7U3t6gMPCNjCLp8T_byk7VGNKh5h7N9yG762lRHuu4zC86o9h82sLHq5EpMVh-Dn306fRW4L8zah0EvXDZTUofd-KzMtaSc0fi6khKWSur-_7OS5YoYkXkU7YeLsv9XjYJ6KkSXX8obC6fVmqlxlkOdcEHrvIUX8QeYS4CfnXt9NLiYbjSiG9Pl_MMuT5dGVPaiQS702GOyq96pw2Vu5IZPVdrFWIGJJn_trDzAil0y7dnWatQHD0y8J9N0SomwK0fdjaSkNs9D0CoT49Uw9pQQKhVOefgVM5hbAEYL5_hqs6pBvo5nWVuAVLMOTD9Qqgi7q-rqh7qKQk88uEmnZDRt0tE6hL2dT3OMrBUtgFj46lu4Kfpq_uKWnTVysk673SDEvinkiEHwaYpB649T7nvM_7aABTCpkyTWkf6dpWZopJkmCtJrqMuhZgNbS6TI6M=w422-h893-no');
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .Three {
-        background-image: url('https://lh3.googleusercontent.com/IoRIxm15hOuW8bmELPq0Yz3-8BhM_9vEeYiGPL7u3KxO0UxbiWat0UD8-pBR6zv4pSpHL6A_BgKMKySfosvdbdO9y_Zcsdiz2w4Xeypln-F9dCZdSiI4Psx80Jv1YINmRb9Fsx8J_oTJvNXe_qLsBqEOhekZCccjRykKkFzAfFOTMvyyaG_7G6eEoiBM2eRDsJcImplwkdUml9wP5iJ_vsYqGcG5_uGR3Sj-iQX1tDJiY2Hy77yXFnHV7HBstnlA8ZCFkCw2Ao487ghsM18aZOJ-w2XK6NhnohkMVfYrMwIH7FprbZuYWIarD0TT2Id63HYJrfZ6S7hVGFM70ATGdO7T3P7m6He0SU0GLvJnszQmwH1laElsbpMMzXMwPz3qpu1JzXoOyBHfhY_EohqtxZ-pSOLbbCQcNMGqsgdP4ShvqjBnym1QUYuREuUJSSG1LjbnvzZi1FbdAES56hvCWKiDvBMk6v7MF-bODmks7owD1tWFKA7DF3cuUWmCB_4VbEW2zl66L2C_V59r9ZMy_FS0T9OGaF3iNgnM-dJ2wYDjj8L-ge5pCcTw8NmmG08_TRAkoltjSZ-0nn9I2Y4x4btvkop-NdTt7SyN9TwFoWM_uI-htioQGZI7RryFU2JahzBBybaq5umfdbHkb0GdmlMhCs_cLOnp-L-3hyBWKUV8mPqKSJM8Br2astGDIrqbeue4Q02jrJRGBwo1gICXg7waNIhbjnhDQq1owZlz5DpwloqC=w910-h909-no');
-        background-size: contain;
+        text-align: center;
+        background-image: url('https://lh3.googleusercontent.com/xCjwHWVeG1sBK5O5JioJ5j6cISNCFjLNCTnmv3O9QyOLITHEJ8a3v3MNlz8cxo77GVsS-ojZKroJhnzM87xQr3g25BPYduyDwUDVQUrmi0qmHkfWKPe12_Y_Q1go9IORLhueqqlRAG2ptuJKadjzUgS8sFt7iw2gRiS_1stfeEbZh_-vc2fj54EfRa6j7ya0KWqVJhsqs2-uHf-6Ph1NV2Lf9juZyVWAzpgUHu1aZF2EccJYELt7kAbKapVyhkepJwSMHlYDupwtOFgH27gPsiYl9JTP5FQXzoRRwca0GUKesXPUvTQUMNgzFKgfPuUqauDU4Xi3vQo8Tq3BLFgrzw3VZu62mWBgpJrU_ezlDPJPZ3zgcw3GPYzoIsNv1w7CYdKfVWzK4rZ61sAh3-XoaAQBfj9_qjhka7eJxJ1lmB32ArsopSj7Xka7wfJv3zQTzn7B-5uJUfv6s73P2zqXEM71e1zNw-TF1zC-olJFNtWj7ddBGTo7JyvNl92bd-yVM-ylrZdJQFC8oLK-Rz8-yUFRxZa-hsh7DM_xWvxUmX9fTk-ZrUWGI-rz16DZwEinpTVO0pTUIrddtIFCkY2IwB9oSO2CEdy5AtRQmY966pP_5RTpzApNN7fS11yO-NkOLf6egzWCd6I9TLfml5yNRmcTFwrViA1-YkLLvr2_1rlWGjMqGzdSHXbdfV0zyyyt1awA73prm-VsHzlrYfnU4hBmS_DVIx3cW1CELCaeWiLh84Xi=w421-h890-no');
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 40px;
     }
 
 .navBar {
@@ -125,30 +175,29 @@ html {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
 }
   
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 20%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
+    .overlay-content {
+        position: relative;
+        top: 12%;
+        width: 100%;
+        text-align: center;
+        overflow-x: hidden;
+    }
   
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 90px;
-    color: rgb(255, 254, 209);
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
+
+    .overlay a {
+        padding: 5vh;
+        text-decoration: none;
+        font-size: 90px;
+        color: rgb(250, 249, 221);
+        display: block;
+        transition: 0.3s;
+    }
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
@@ -172,3 +221,281 @@ html {
       right: 35px;
     }
   }
+
+
+  #overlayOne {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  #overlayTwo {
+    border-radius: 10px;
+    position: relative; 
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3; 
+    cursor: pointer;
+  }
+
+  #overlayThree {
+    border-radius: 10px;
+    position: relative; 
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3; 
+    cursor: pointer;
+  }
+
+  #text{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(219, 219, 219);
+    line-height: 20px;
+  }
+
+  .display {
+      display: none;
+  }
+
+footer {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(255, 255, 247);
+}
+
+.contactButton {
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: rgb(0, 46, 107);
+    color: rgb(255, 255, 247);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.whatIDoList {
+    
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: 'Orbitron', sans-serif;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+.whatIDoListItem {
+    padding: 5px 10px 5px 10px;
+    
+}
+
+.techList {
+    list-style: none;
+    padding: 10px 20px 20px 20px;
+}
+
+.textItem {
+    padding: 2px 0px 2px 0px;
+    text-align: left;
+}
+
+.appDescription {
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+.appLinks {
+    display: inline-block;
+    margin: 50px 20px 20px 20px;
+    font-size: 60px;
+}
+
+.linksContainer {
+    text-align: center;
+    color: white;
+}
+
+.textTitle {
+    font-size: 20px;
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.textSubtitle {
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    color: white;
+}
+
+.titleButton {
+    text-align: center;
+}
+
+.regularTitle {
+    padding: 10px 10px 10px 10px;
+    color: rgb(0, 46, 107);
+}
+
+.aboutContainer {
+    padding: 20px 20px 20px 20px;
+    width: 100vw;
+    background-image: url("https://lh3.googleusercontent.com/e0DFyxSAmdJQKDTyuclbK6JhUBmda7z94azO5m8pfhJEufMQE2wWkjMJNJX_zgMA_R0CeEvHVrW2DCJyPBamhhqcwH3lY-eCbme77F26XS_4vzoKv0GTEjkp8OpWTZOGTRHj-DBU1MKpTObp_qLXAdjKdT3yqvz3Q2H76IaGYHKggVruU4GKcyNqW5uJOQnUXcfo3vyFHsQhEba29LuZkw46E2PmOyYNhziU0XvQsTuRYoqK4wfc9cMGjv2wpYRHQtLBFpmIcSi9U0aB3qDcfYwpp4Yh0OBsswnG4mtAyKj7OWElgHW9fhrFUgS4Aitht0M8B0A6PAS89lWL-Xf4L-6yhtMs-nUca95n4WQlysvu8hGJ5daqvWaDEO9m3N3EX5nGn5o4uD2d8taYS6iJqW_kxQ5j2AJsgy_EIHSnfiyMkqriFTU4v3QJbSzTXD0vwncnUtm7pIOqI1fS5BlIVfgA8xPphOb5gkOKDgh76kcysELbxOMXLrtEF7IHOYs_xdHSZ5DVzk9uDrpK2Z57_07N65vSmFA-81rghT2T0eZdeTUit1-GdF5p9M5YLkgS974gHxMnuBwAcsnqCPAvROH1IvDGqBIUjOzEV_rHM0GKTm7l1m6Tcroih4hjhK6Qq3m0k989c_4oJEqxJiDvvBHS3xMmm-m6IJUBuN0xT8iXJlqjnTnsonH0GRQMzf3qAc3_UdghhFaMvhVuHh0AmBbJLB7_S038cnJjyMTkSbbgd5Rj=w1467-h978-no");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 46, 107);
+    
+}
+
+.aboutBackground {
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.aboutDescription {
+    padding: 10px 0px 15px 0px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.navBarFull {
+    display: none;
+}
+
+.fullscreenAppLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.screenAppLinkIcon {
+    padding: 10px 20px 0px 0px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.screenAppLinkIcon a:hover {
+    transform: scale(1.3);
+    color: rgb(0, 94, 138);
+}
+
+.clickMe {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(0, 94, 138);
+    padding: 10px 0px 5px 0px;
+}
+
+@media screen and (min-width: 800px) {
+    .project {
+        width: 29vw;
+        height: 98vh;
+        opacity: 0.8;
+        animation: none;
+    }
+    
+
+    .project:hover {
+        transform: scale(1.02);
+        opacity: 1;
+        border: none;
+        box-shadow: 3px 3px 13px black;
+    }
+
+    .Three {
+        margin-bottom: 80px;
+    }
+
+    footer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 50px 0px 40px 0px;
+        background-color: rgb(255, 255, 247);
+    }
+
+    .contactButton {
+        font-size: 25px;
+        height: 50px;
+        width: 200px;
+        border: none;
+        background-color: rgb(0, 46, 107);
+        color: rgb(255, 255, 247);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .contactButton:hover {
+        background-color: rgb(0, 94, 138);
+        transform: scale(1.02);
+    }
+
+    .titleName {
+        font-size: 50px;
+        color: rgb(0, 46, 107);
+        margin: 0px 0px 10px 10px;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+    
+    }
+        
+    .catchText {
+        font-size: 25px;
+        margin: 10px 0px 0px 0px;
+        color: rgb(0, 38, 87);
+        margin: 0px 0px 0px 10px;
+        text-align: center;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .navBarFull {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        color: rgb(0, 38, 87);
+    }
+
+    .navBarLink {
+        display: inline-block;
+        color: rgb(0, 38, 87);
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .navBarLink:hover {
+        transform: scale(1.1);
+    }
+}
