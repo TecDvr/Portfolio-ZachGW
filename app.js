@@ -14,7 +14,6 @@ function one() {
     $('body').on('click', '.One', function(e) {
         e.preventDefault();
         $('#overlayOne').fadeToggle(500).toggleClass('display');
-        console.log('doing something');
     })
 }
 
@@ -22,7 +21,6 @@ function two() {
     $('body').on('click', '.Two', function(e) {
         e.preventDefault();
         $('#overlayTwo').fadeToggle(500).toggleClass('display');
-        console.log('doing something');
     })
 }
 
@@ -30,7 +28,6 @@ function three() {
     $('body').on('click', '.Three', function(e) {
         e.preventDefault();
         $('#overlayThree').fadeToggle(500).toggleClass('display');
-        console.log('doing something');
     })
 }
 
