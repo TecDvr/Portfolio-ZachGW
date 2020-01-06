@@ -28,7 +28,6 @@ html {
                 box-sizing: border-box;
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
-        /* overflow-x: hidden; */
     }
 
     .parallax-wrapper::before {
@@ -74,7 +73,6 @@ html {
     margin: 0px 0px 10px 10px;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-
 }
     
 .catchText {
@@ -90,43 +88,7 @@ html {
     color: rgb(0, 46, 107);
     font-size: 25px;
     margin-top: 86vh;
-    -webkit-animation:  bounceIn 2s ease-in-out 1s infinite;
-            animation:  bounceIn 2s ease-in-out 1s infinite;
 }
-
-@-webkit-keyframes bounceIn {
-    20% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-        opacity: 0;
-    }
-    60% {
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-  }
-
-@keyframes bounceIn {
-    20% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-        opacity: 0;
-    }
-    60% {
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-  }
 
 .flexContainer {
     display: -webkit-box;
@@ -147,23 +109,6 @@ html {
     margin: 0px 10px 20px 10px;
     border-radius: 10px;
     cursor: pointer;
-    -webkit-animation:  bounceIn 5s infinite;
-            animation:  bounceIn 5s infinite;
-}
-
-@keyframes bounceIn {
-    0% {
-        -webkit-transform: scale(0.99);
-                transform: scale(0.99);
-    }
-    60% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(0.99);
-                transform: scale(0.99);
-    }
 }
 
 .appImg {
@@ -220,7 +165,6 @@ html {
         text-decoration: none;
         font-size: 90px;
         color: rgb(250, 249, 221);
-        display: block;
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
@@ -459,6 +403,15 @@ footer {
 
 /* small screen */
 @media screen and (max-width: 340px) {
+    .overlay {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+      
+        .overlay-content {
+            position: relative;
+            height: calc(var(--vh, 1vh) * 100);
+        }
+
     .appDescription {
         font-size: 15px;
     }
@@ -491,8 +444,6 @@ footer {
     .project {
         width: 29vw;
         height: 98vh;
-        -webkit-animation: none;
-                animation: none;
     }
 
     .project:hover {
