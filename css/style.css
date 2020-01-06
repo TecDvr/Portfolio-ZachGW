@@ -291,7 +291,6 @@ footer {
 }
 
 .whatIDoList {
-    
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -310,9 +309,8 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 
-.whatIDoListItem {
+.whatIDoList li {
     padding: 5px 10px 5px 10px;
-    
 }
 
 .techList {
