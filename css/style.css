@@ -404,12 +404,12 @@ footer {
 /* small screen */
 @media screen and (max-width: 340px) {
     .overlay {
-        height: calc(var(--vh, 1vh) * 100);
+        height: calc(var(--vh, 1vh) * 100) !important;
     }
       
         .overlay-content {
             position: relative;
-            height: calc(var(--vh, 1vh) * 100);
+            height: calc(var(--vh, 1vh) * 100) !important;
         }
 
     .appDescription {
