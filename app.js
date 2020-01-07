@@ -5,6 +5,7 @@ function setDocHeight() {
 window.addEventListener('resize', function () {
     setDocHeight();
 });
+
 window.addEventListener('orientationchange', function () {
     setDocHeight();
 });
