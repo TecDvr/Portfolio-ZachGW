@@ -5,9 +5,9 @@
     z-index: 2;
     font-size: 10px;
     cursor: pointer;
-    -webkit-transition: .2s all;
-    -o-transition: .2s all;
-    transition: .2s all;
+    -webkit-transition: .8s all;
+    -o-transition: .8s all;
+    transition: .8s all;
     -webkit-tap-highlight-color: transparent; 
 }
     

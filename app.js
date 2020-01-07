@@ -23,6 +23,13 @@ function hamburgerOpen() {
     }
 }
 
+function noScroll() {
+    $('body').on('click', '.burger', (e) => {
+        e.preventDefault();
+        $('body').toggleClass('noScroll');
+    })
+}
+
 function one() {
     $('body').on('click', '.One', function(e) {
         e.preventDefault();
@@ -45,6 +52,7 @@ function three() {
 }
 
 function runPortfolio() {
+    noScroll();
     one();
     two();
     three();
