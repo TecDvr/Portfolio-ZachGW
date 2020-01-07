@@ -6,68 +6,22 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-@media screen and (min-width: 900px) {
-    html {
-        height: 100%;
-        overflow: hidden;
-    }
-
-    body {
-        height: 100%;
-        -webkit-perspective: 1px;
-                perspective: 1px;
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
+.noScroll {
+    overflow: hidden;
 }
 
+.parallax-wrapper {
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url("https://lh3.googleusercontent.com/e0DFyxSAmdJQKDTyuclbK6JhUBmda7z94azO5m8pfhJEufMQE2wWkjMJNJX_zgMA_R0CeEvHVrW2DCJyPBamhhqcwH3lY-eCbme77F26XS_4vzoKv0GTEjkp8OpWTZOGTRHj-DBU1MKpTObp_qLXAdjKdT3yqvz3Q2H76IaGYHKggVruU4GKcyNqW5uJOQnUXcfo3vyFHsQhEba29LuZkw46E2PmOyYNhziU0XvQsTuRYoqK4wfc9cMGjv2wpYRHQtLBFpmIcSi9U0aB3qDcfYwpp4Yh0OBsswnG4mtAyKj7OWElgHW9fhrFUgS4Aitht0M8B0A6PAS89lWL-Xf4L-6yhtMs-nUca95n4WQlysvu8hGJ5daqvWaDEO9m3N3EX5nGn5o4uD2d8taYS6iJqW_kxQ5j2AJsgy_EIHSnfiyMkqriFTU4v3QJbSzTXD0vwncnUtm7pIOqI1fS5BlIVfgA8xPphOb5gkOKDgh76kcysELbxOMXLrtEF7IHOYs_xdHSZ5DVzk9uDrpK2Z57_07N65vSmFA-81rghT2T0eZdeTUit1-GdF5p9M5YLkgS974gHxMnuBwAcsnqCPAvROH1IvDGqBIUjOzEV_rHM0GKTm7l1m6Tcroih4hjhK6Qq3m0k989c_4oJEqxJiDvvBHS3xMmm-m6IJUBuN0xT8iXJlqjnTnsonH0GRQMzf3qAc3_UdghhFaMvhVuHh0AmBbJLB7_S038cnJjyMTkSbbgd5Rj=w1467-h978-no");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
 
-
-    
-
-    .noScroll {
-        overflow: hidden;
-    }
-
-    .parallax-wrapper {
-        width: 100vw;
-        height: calc(var(--vh, 1vh) * 100);
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-    }
-
-    .parallax-wrapper::before {
-        content:"";
-        width: 100vw;
-        height: calc(var(--vh, 1vh) * 100);
-        top:0;
-        left:0;
-        background-image: url("https://lh3.googleusercontent.com/e0DFyxSAmdJQKDTyuclbK6JhUBmda7z94azO5m8pfhJEufMQE2wWkjMJNJX_zgMA_R0CeEvHVrW2DCJyPBamhhqcwH3lY-eCbme77F26XS_4vzoKv0GTEjkp8OpWTZOGTRHj-DBU1MKpTObp_qLXAdjKdT3yqvz3Q2H76IaGYHKggVruU4GKcyNqW5uJOQnUXcfo3vyFHsQhEba29LuZkw46E2PmOyYNhziU0XvQsTuRYoqK4wfc9cMGjv2wpYRHQtLBFpmIcSi9U0aB3qDcfYwpp4Yh0OBsswnG4mtAyKj7OWElgHW9fhrFUgS4Aitht0M8B0A6PAS89lWL-Xf4L-6yhtMs-nUca95n4WQlysvu8hGJ5daqvWaDEO9m3N3EX5nGn5o4uD2d8taYS6iJqW_kxQ5j2AJsgy_EIHSnfiyMkqriFTU4v3QJbSzTXD0vwncnUtm7pIOqI1fS5BlIVfgA8xPphOb5gkOKDgh76kcysELbxOMXLrtEF7IHOYs_xdHSZ5DVzk9uDrpK2Z57_07N65vSmFA-81rghT2T0eZdeTUit1-GdF5p9M5YLkgS974gHxMnuBwAcsnqCPAvROH1IvDGqBIUjOzEV_rHM0GKTm7l1m6Tcroih4hjhK6Qq3m0k989c_4oJEqxJiDvvBHS3xMmm-m6IJUBuN0xT8iXJlqjnTnsonH0GRQMzf3qAc3_UdghhFaMvhVuHh0AmBbJLB7_S038cnJjyMTkSbbgd5Rj=w1467-h978-no");
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        z-index: -1;
-        -webkit-transform:translateZ(-1px) scale(2);
-                transform:translateZ(-1px) scale(2);
-        opacity: 0.8;
-        overflow-x: hidden;
-    }
-
-    .regular-wrapper {
-        width: 100vw;
-        min-height: calc(var(--vh, 1vh) * 100);
-        padding-top: 20px;
-        background-color: rgb(255, 255, 247);
-        background-size: cover;
-        z-index: 2;
-        position: relative;
-        overflow-x: hidden;
-    }
+.regular-wrapper {
+    min-height: calc(var(--vh, 1vh) * 100);
+    background-color: rgb(255, 255, 247);
+}
 
     .content {
         position: absolute;
@@ -429,7 +383,7 @@ footer {
 }
 
 /* tablet */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 799px) {
     .project {
         width: 40vw;
         height: 50vh;
@@ -443,6 +397,62 @@ footer {
 
 /* full screen */
 @media screen and (min-width: 800px) {
+    html {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        height: 100%;
+        -webkit-perspective: 1px;
+                perspective: 1px;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .parallax-wrapper {
+        width: 100vw;
+        height: calc(var(--vh, 1vh) * 100);
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        background-image: none;
+        background-position: unset;
+        background-size: unset;
+        opacity: 1;
+    }
+
+    .parallax-wrapper::before {
+        content:"";
+        width: 100vw;
+        height: calc(var(--vh, 1vh) * 100);
+        top:0;
+        left:0;
+        background-image: url("https://lh3.googleusercontent.com/e0DFyxSAmdJQKDTyuclbK6JhUBmda7z94azO5m8pfhJEufMQE2wWkjMJNJX_zgMA_R0CeEvHVrW2DCJyPBamhhqcwH3lY-eCbme77F26XS_4vzoKv0GTEjkp8OpWTZOGTRHj-DBU1MKpTObp_qLXAdjKdT3yqvz3Q2H76IaGYHKggVruU4GKcyNqW5uJOQnUXcfo3vyFHsQhEba29LuZkw46E2PmOyYNhziU0XvQsTuRYoqK4wfc9cMGjv2wpYRHQtLBFpmIcSi9U0aB3qDcfYwpp4Yh0OBsswnG4mtAyKj7OWElgHW9fhrFUgS4Aitht0M8B0A6PAS89lWL-Xf4L-6yhtMs-nUca95n4WQlysvu8hGJ5daqvWaDEO9m3N3EX5nGn5o4uD2d8taYS6iJqW_kxQ5j2AJsgy_EIHSnfiyMkqriFTU4v3QJbSzTXD0vwncnUtm7pIOqI1fS5BlIVfgA8xPphOb5gkOKDgh76kcysELbxOMXLrtEF7IHOYs_xdHSZ5DVzk9uDrpK2Z57_07N65vSmFA-81rghT2T0eZdeTUit1-GdF5p9M5YLkgS974gHxMnuBwAcsnqCPAvROH1IvDGqBIUjOzEV_rHM0GKTm7l1m6Tcroih4hjhK6Qq3m0k989c_4oJEqxJiDvvBHS3xMmm-m6IJUBuN0xT8iXJlqjnTnsonH0GRQMzf3qAc3_UdghhFaMvhVuHh0AmBbJLB7_S038cnJjyMTkSbbgd5Rj=w1467-h978-no");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        -webkit-transform:translateZ(-1px) scale(2);
+                transform:translateZ(-1px) scale(2);
+        opacity: 0.8;
+        overflow-x: hidden;
+    }
+
+    .regular-wrapper {
+        width: 100vw;
+        min-height: calc(var(--vh, 1vh) * 100);
+        padding-top: 20px;
+        background-color: rgb(255, 255, 247);
+        background-size: cover;
+        z-index: 2;
+        position: relative;
+        overflow-x: hidden;
+    }
+
     .project {
         width: 29vw;
         height: 98vh;
